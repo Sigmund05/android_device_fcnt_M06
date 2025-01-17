@@ -74,6 +74,11 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,qtipower,tap_to_wake_node,/sys/devices/platform/goodix_ts.0/gesture/double_en)
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors-service.multihal \
+    sensors.dynamic_sensor_hal
+
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 34
