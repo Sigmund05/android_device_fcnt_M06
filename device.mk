@@ -39,6 +39,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.demura-service
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
