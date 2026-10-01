@@ -36,6 +36,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a75
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := parrot
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
