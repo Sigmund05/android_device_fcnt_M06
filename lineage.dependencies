@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "android_kernel_fcnt_sm7435",
+    "target_path": "kernel/fcnt/sm7435"
+  },
+  {
+    "repository": "android_kernel_fcnt_sm7435-devicetrees",
+    "target_path": "kernel/fcnt/sm7435-devicetrees"
+  },
+  {
+    "repository": "android_kernel_fcnt_sm7435-modules",
+    "target_path": "kernel/fcnt/sm7435-modules"
+  }
+]
