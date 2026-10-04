@@ -1,5 +1,6 @@
 gh_virt_wdt.ko
 qcom-pmu-lib.ko
+qcom_wdt_core.ko
 dcvs_fp.ko
 qcom-dcvs.ko
 clk-dummy.ko
@@ -15,6 +16,7 @@ qcom-cpufreq-hw.ko
 sched-walt.ko
 qnoc-parrot.ko
 qnoc-ravelin.ko
+qcom_wdt_core.ko
 icc-rpmh.ko
 qcom_ipc_logging.ko
 qcom-pdc.ko
@@ -72,7 +74,6 @@ qti-fixed-regulator.ko
 nvmem_qcom-spmi-sdam.ko
 proxy-consumer.ko
 qcom-spmi-pmic.ko
-qpnp-power-on.ko
 spmi-pmic-arb.ko
 qcom-reboot-reason.ko
 qti-regmap-debugfs.ko
@@ -85,7 +86,6 @@ ufshcd-crypto-qti.ko
 tmecom-intf.ko
 bcl_pmic5.ko
 dispcc-ravelin.ko
-qcom_wdt_core.ko
 msm_sysstats.ko
 zsmalloc.ko
 lzo.ko
@@ -175,10 +175,9 @@ frpc-adsprpc.ko
 rdbg.ko
 qcom_iommu_debug.ko
 msm_kgsl.ko
+zram.ko
 hdcp.ko
 qseecom-mod.ko
-hardware_info.ko
-ledpulsedrv.ko
 qcom-i2c-pmic.ko
 nfc_i2c.ko
 sg.ko
@@ -207,14 +206,15 @@ usb_f_gsi.ko
 f_fs_ipc_log.ko
 ucsi_glink.ko
 redriver.ko
-redriver_hq.ko
-focaltech_tp.ko
+ps5169.ko
+focaltech_fts.ko
 nt36xxx-i2c.ko
 nt36xxx-spi.ko
 goodix_core.ko
 pm8941-pwrkey.ko
+qpnp-power-on.ko
 qcom-hv-haptics.ko
-fpc1020_drv.ko
+fpc1020_platform_tee.ko
 i2c-msm-geni.ko
 qcom_ipc_lite.ko
 synx-driver.ko
@@ -223,7 +223,6 @@ qcom-pon.ko
 reboot-mode.ko
 qti_battery_charger_main.ko
 schgm-flash.ko
-qns_system.ko
 qcom-spmi-temp-alarm.ko
 qti-adc-tm.ko
 qti_qmi_sensor_v2.ko
@@ -291,9 +290,6 @@ stm_p_basic.ko
 stm_p_ost.ko
 stm_console.ko
 stm_ftrace.ko
-moto_mm.ko
-moto_mmap_fault.ko
-moto_swap.ko
 snd-usb-audio-qmi.ko
 cfg80211.ko
 qrtr-smd.ko
