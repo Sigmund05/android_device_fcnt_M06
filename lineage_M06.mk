@@ -14,6 +14,10 @@ $(call inherit-product, device/fcnt/M06/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_M06
 PRODUCT_DEVICE := M06

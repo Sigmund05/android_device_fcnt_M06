@@ -36,6 +36,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a75
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := M06
 
+# Display
+TARGET_SCREEN_DENSITY := 420
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
