@@ -1,0 +1,5 @@
+# System server
+persist.arm64.memtag.system_server=off
+
+# Voice assistant
+ro.opa.eligible_device=true
