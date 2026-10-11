@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
 
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink \
