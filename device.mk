@@ -25,6 +25,35 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.soundtrigger@2.3-impl \
+    audio.bluetooth.default \
+    audio.primary.parrot \
+    audio.r_submix.default \
+    audio.usb.default \
+    audioadsprpcd \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libbatterylistener \
+    libfmpal \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libvolumelistener \
+    sound_trigger.primary.parrot \
+    vendor.qti.hardware.AGMIPC@1.0-service
+
+$(call soong_config_set,android_hardware_audio,run_64bit,true)
+
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
