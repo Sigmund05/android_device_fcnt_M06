@@ -44,6 +44,24 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/default-permissions_com.google.android.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions_com.google.android.euicc.xml \
     $(LOCAL_PATH)/configs/privapp_allowlist_com.google.android.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp_allowlist_com.google.android.euicc.xml
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss-aidl-impl-qti \
+    android.hardware.gnss-aidl-service-qti \
+    gnss@2.0-base.policy \
+    gnss@2.0-xtra-daemon.policy \
+    gnss@2.0-xtwifi-client.policy \
+    libbatching \
+    libgeofencing \
+    libgnss \
+    libloc_socket
+
+PRODUCT_PACKAGES += \
+    batching.conf \
+    gnss_antenna_info.conf \
+    gps.conf
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
