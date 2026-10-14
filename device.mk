@@ -141,6 +141,12 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     IPACM_Filter_cfg.xml
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/qcom-battery/charging_enabled)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
