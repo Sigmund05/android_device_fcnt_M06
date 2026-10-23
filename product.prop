@@ -1,0 +1,5 @@
+# Remote provisioning
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+
+# Voice assistant
+ro.opa.eligible_device=true
