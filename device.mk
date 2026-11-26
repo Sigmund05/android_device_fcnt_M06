@@ -115,6 +115,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery
 
+# Hotword enrollment
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp_allowlist_com.android.hotwordenrollment.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp_allowlist_com.android.hotwordenrollment.xml
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.default \
