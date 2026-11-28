@@ -67,6 +67,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libsnapdragoncolor-manager.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/bin/init.qti.media.sh': blob_fixup()
+        .regex_replace(r'\[ \$build_codename -le "14" \]', 'true'),
     'vendor/bin/qcc-trd': blob_fixup()
         .replace_needed('libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'),
     'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
